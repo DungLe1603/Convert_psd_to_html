@@ -11,6 +11,7 @@ body {
     margin: 0 auto;
 }
 main{
+    background: url('../image/background.png') repeat-x;
     margin-bottom: 30px;
 }
 footer{
@@ -43,6 +44,7 @@ footer{
     border-radius: 50%;
     background-color: #d2d2d2;
 }
+h5{ margin-top: 0;  }
 ul{ margin-top: 10px; margin-bottom: 10px; }
 ul>li{
     margin: 5px;
@@ -103,6 +105,8 @@ ul>li>a.text-topbar:hover{    color: #6a3144;}
     border-top-right-radius: 5px;
 }
 #search{
+    border-radius: 5px;
+    border-style: none;
     margin: 0px;
     padding: 5px;
 }
@@ -131,18 +135,22 @@ ul>li>a.text-naviginative{
    background-color: #6a3144;
    border-radius: 5px;
 }
+.contain-slide{
+    background: #fff; 
+    padding-top: 5px;
+}
 .slider{
-    width: 900px;
+    width: 90%px;
     height: 350px;
-    margin: auto;
-    background: url('../image/900x350.png') center no-repeat;
+    margin: 30px;
+    background: url('../image/maxresdefault.jpg') center no-repeat;
     position: relative;
 }
 .slider-text{
     position: absolute;
     right: 10px;
     bottom: 30px;
-    padding: 10px,20px;
+    padding: 10px 30px;
     margin:10px;
     background: rgba(255,255,255,0.5);
 }
@@ -151,7 +159,7 @@ ul>li>a.text-naviginative{
     display: flex;
     justify-content: center;
     padding: 10px;
-    margin: 20px;
+    
 }
 h4{text-align: center;}
 .your-title{
@@ -198,7 +206,8 @@ h4{text-align: center;}
 }
 .box1-title{ color: #97455f; }
 .input-footer{
-    width: 100%
+    width: 100%;
+    border-style: none;
     border-radius: 5px;
     background-color: #fff;
     padding: 5px;

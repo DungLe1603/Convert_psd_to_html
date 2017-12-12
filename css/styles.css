@@ -145,6 +145,10 @@ ul>li.text-topbar{
 .top-option:hover {
    background-color: #6a3144;
 }
+#option-home:hover {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
 ul>li>a.text-naviginative{
    color: #fff;
    margin: 0;
@@ -225,16 +229,27 @@ h4{text-align: center;}
     color:#97455f; 
     background-color: #fff;
     border-radius: 5px;
+    border-style: none;
 }
-#shout-submit:hover{ 
+#shout-submit:hover{
+    color: #fff;
+    background-color: #6a3144;
+} 
+/*#shout-submit:hover { 
     color:#fff; 
     background-color: #6a3144;
     border-style: none; 
+}*/
+.box1{ margin: 20px 0; }
+.box1-img{
+    float: left; 
+    padding: 5px;
+    border: 1px solid #bcbcbc;
 }
-.box1{ margin-top: 10px; }
-.box1-img{ float: left; }
 .box1-text{
-    margin-left: 105px;
+    margin: 20px;
+    position: relative;
+    left: 20px;
 }
 .box1-title{ font-size: 16px; color: #97455f; }
 .input-footer{

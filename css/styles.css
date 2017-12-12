@@ -48,6 +48,8 @@ h1,h2,h3,h4,h5,input {font-family: Georgia;}
  }
  .top-menu{margin: 0 -30px;}
 .icon-topbar{
+    width: 35px;
+    height: 35px;
     padding: 10px;
     border-radius: 50%;
     background-color: #d2d2d2;
@@ -73,6 +75,8 @@ ul>li.text-topbar{
     right: 15px;
 }
 .link-text{
+    margin: 0;
+    vertical-align: middle;
     color: #97455f;
 }
 .link-text:hover { color:  #6a3144;}
@@ -87,8 +91,7 @@ ul>li.text-topbar{
 
 
 .header-content{
-    background-color: #ebebeb;
-    
+    margin: 0 -15px;
 }
 .header-content h1{
     color: #000;
@@ -101,6 +104,7 @@ ul>li.text-topbar{
 .logo{
     margin: 60px 0 30px -15px; 
 }
+.logo img{ width: 60%; }
 .search-form{
     float: right;
     margin-top: 60px;
@@ -112,13 +116,14 @@ ul>li.text-topbar{
 .submit{
     background: #97455f;
     color: #fff;
-    padding: 8px;
+    padding: 8px 10px;
     text-decoration: none;
     border-style: none;
     border-radius: 5px;
 }
 .submit:hover { background-color: #6a3144; }
 #search{
+    width:220px;
     border-radius: 5px;
     border-style: none;
     margin: -5px;
@@ -278,6 +283,7 @@ h4{text-align: center;}
     margin: 0;
     border-top: 1px solid #bcbcbc;
 }
+#footer-submit{margin: 5px;}
 #link-email{color: #97455f;}
 #copyright-left{ float: left; margin: 15px; }
 #copyright-right{ float: right; margin: 15px; }

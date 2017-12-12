@@ -1,6 +1,6 @@
 @font-face{
     font-family: Georgia;
-    src: url("../fonts/georgia.ttf");
+    src: url("fonts/georgia.ttf");
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -13,36 +13,40 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+footer, header{
+    font-size: 12px;
+    color: #999;
+    background-color: #eee;
+}
 main{
     background: url('../image/background.png') repeat-x;
     margin-bottom: 30px;
 }
-footer{
-    background-color: #eee;
-}
 h1,h2,h3,h4,h5,input {font-family: Georgia;}
-#full-hr{
+.row{ margin: 0 15px; }
+#top-hr{
     margin: 0;
     border-top: 1px solid #97455f;
 }
-#main-hr{
+.main-hr{
     margin: 0;
     border-top: 5px solid #d2d2d2;
 }
+#control-hr{margin: 0 30px;}
 .header{
     width: 100%;
     background-color: gray;
 }
 .topbar{
-    width: 100%
     background-color: #fff;
-    padding: 5px, 0;
+    padding: 0 -15px;
     border-bottom: 2px #97455f;
  }
 .container{
      margin: 0 auto;
      position: relative;
  }
+ .top-menu{margin: 0 -30px;}
 .icon-topbar{
     padding: 10px;
     border-radius: 50%;
@@ -62,6 +66,11 @@ ul>li.text-topbar{
     color: #97455f;
     background-color: #fff;
     border-radius: 10px;
+}
+#tongle{
+    position: absolute;
+    top: 0;
+    right: 15px;
 }
 .link-text{
     color: #97455f;
@@ -90,12 +99,11 @@ ul>li.text-topbar{
     padding: auto;
 }
 .logo{
-    margin-top: 30px;
-    margin-bottom: 30px; 
+    margin: 60px 0 30px -15px; 
 }
 .search-form{
     float: right;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 /*.search-form input{ margin: 0; })*/
 #imaginative{ font-size: 20px; float: left; }
@@ -104,7 +112,7 @@ ul>li.text-topbar{
 .submit{
     background: #97455f;
     color: #fff;
-    padding: 5px;
+    padding: 8px;
     text-decoration: none;
     border-style: none;
     border-radius: 5px;
@@ -114,13 +122,17 @@ ul>li.text-topbar{
     border-radius: 5px;
     border-style: none;
     margin: -5px;
-    padding: 5px;
+    padding: 8px;
+}
+#top-submit{
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0;
+    margin-right: -30px;
 }
 .top-navigation{
     padding: 0;
     background:#97455f;
     border-radius: 5px;
-    margin: 10px,0;
 }
 .top-navigation a{
     color:#fff;
@@ -132,7 +144,6 @@ ul>li.text-topbar{
 }
 .top-option:hover {
    background-color: #6a3144;
-   border-radius: 5px;
 }
 ul>li>a.text-naviginative{
    color: #fff;
@@ -178,8 +189,15 @@ h4{text-align: center;}
     
 }
 .content-part1, .content-part2 {
+    color: #999;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+.content-part1 h5{
+    color: #97455f;
+}
+.content-part2 h5{
+    color: #333;
 }
 .img-64, .img-128{ float: left; }
 .text1-content h4{ margin-top: 0; }
@@ -187,7 +205,7 @@ h4{text-align: center;}
 .text2-content{ margin-left: 135px; text-align: left; }
 .shout{
     padding: 10px;
-    margin: 10px;
+    margin: 30px;
     background-color: #97455f;
     border-radius: 5px;
 }
@@ -196,12 +214,12 @@ h4{text-align: center;}
     margin: 10px;
     padding: 10px;
 }
-.shout2{ margin: 20px,15px; }
+.shout2{ color: #fff; }
 #shout-title{font-size: 36px;}
 #shout-ph{font-size: 18px;}
 #shout-submit{ 
     font-size: 26px;
-    float: left;
+    float: right;
     padding: 10px;
     margin: 20px;
     color:#97455f; 
@@ -218,7 +236,7 @@ h4{text-align: center;}
 .box1-text{
     margin-left: 105px;
 }
-.box1-title{ color: #97455f; }
+.box1-title{ font-size: 16px; color: #97455f; }
 .input-footer{
     width: 100%;
     border-style: none;
@@ -237,5 +255,14 @@ h4{text-align: center;}
     margin-bottom: 30px;
 }
 
+.footer-box h5 {
+    font-size: 16px;
+    color: #333;
+}
+#footer-hr{
+    margin: 0;
+    border-top: 1px solid #bcbcbc;
+}
+#link-email{color: #97455f;}
 #copyright-left{ float: left; margin: 15px; }
 #copyright-right{ float: right; margin: 15px; }

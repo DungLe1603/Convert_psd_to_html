@@ -11,8 +11,8 @@
 		<div class="topbar">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-6 col-sm-6 col-md-6">
-							<ul>
+						<div class="col-xs-12 col-sm-6 col-md-6">
+							<ul class="top-menu"> 
 								<li class="icon-topbar" id="linkedin-icon">
 									<a href="#"> <img src="image/icon-linkedin.png" alt="icon-linkedin"></a>
 								</li>
@@ -30,8 +30,8 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-xs-6 col-sm-6 col-md-6">
-							<ul>
+						<div class="col-xs-12 col-sm-6 col-md-6">
+							<ul class="top-menu">
 								<li class="text-topbar"><a class="link-text" href="#">Sign Up</a></li>
 								<li class="text-topbar"><p class="link-text">|</p></li>
 								<li class="text-topbar"><a class="link-text" href="#">Log In</a></li>
@@ -44,9 +44,12 @@
 					</div>
 				</div>
 		</div>
-		<hr id="full-hr">
+		<hr id="top-hr">
 		<div class="header-content">
 			<div class="row">
+				<div class="container">
+					<a id="tongle" href="#"><img src="image/tongle.png"></a>
+				</div>
 				<div class="container">
 					<div class="logo col-xs-6 col-sm-6 col-md-6">
 						<img src="image/logo.png">
@@ -54,7 +57,7 @@
 					<div class="col-xs-6 col-sm-6 col-md-6">
 						<form class="search-form">
 							<input id="search" type="text" placeholder="Search our website...">
-							<input class="submit" type="submit" value="SUBMIT">
+							<input id="top-submit" class="submit" type="submit" value="SUBMIT">
 						</form>
 					</div>
 					<div class="top-navigation col-xs-12 col-sm-12 col-md-12">
@@ -94,7 +97,7 @@
 			</ul>
 		</div>
 		<div class="container">
-			<hr id="main-hr">
+			<hr  id="control-hr" class="main-hr">
 			<h4 class="your-title">YOUR TITLE HERE</h4>
 					
 			<div class="row">
@@ -153,7 +156,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="content-part2 col-xs-6 col-sm-6 col-md-6">
-					<hr id="main-hr">
+					<hr class="main-hr">
 					<h4 class="your-title">YOUR TITLE HERE</h4>
 					<div>
 						<div class="img-128 img-circle"><img src="image/128x.png"></div>
@@ -165,7 +168,7 @@
 					</div>	
 				</div>
 				<div class="content-part2 col-xs-6 col-sm-6 col-md-6">
-					<hr id="main-hr">
+					<hr class="main-hr">
 					<h4 class="your-title">YOUR TITLE HERE</h4>
 					<div>
 						<div class="img-64">
@@ -196,7 +199,7 @@
 		</div>
 	</main>
 
-	<hr id="main-hr">
+	<hr class="main-hr">
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -221,7 +224,7 @@
 				<div class="footer-box col-xs-3 col-sm-3 col-md-3">
 					<h5>Company Details</h5>
 					<p>Company Name<br>Street Name & Number<br>Town<br>Postcode/Zip</p>
-					<p>Tel: xxxxx xxxxxxxxxx<br>Fax: xxxxx xxxxxxxxxx<br>Email: contact@mydomain.com</p>
+					<p>Tel: xxxxx xxxxxxxxxx<br>Fax: xxxxx xxxxxxxxxx<br>Email: <a id="link-email" href="#"> contact@mydomain.com</a></p>
 					<p> <strong> Office Hours </strong> <br> Monday - Friday: 08:00 - 17:30<br>Saturday: 08:00 - 13:00</p>
 					
 				</div>
@@ -229,12 +232,12 @@
 					<h5>Contact Us</h5>
 					<input class="input-footer" type="text" placeholder="Name">
 					<input class="input-footer" type="text" placeholder="Email">
-					<textarea class="input-footer" rows="3" placeholder="Message"></textarea>
+					<textarea class="input-footer" rows="5" placeholder="Message"></textarea>
 					<div><input class="submit" type="submit" value="SUBMIT"></div>
 				</div>
 			</div>
 		</div>
-		<hr id="full-hr">
+		<hr id="footer-hr">
 		<div class="container">
 			<div class="row">
 				<div id="copyright-left">
